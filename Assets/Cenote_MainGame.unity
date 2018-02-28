@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 689691327}
   - component: {fileID: 689691326}
   - component: {fileID: 689691325}
+  - component: {fileID: 689691329}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -187,13 +188,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 689691324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 218.34206, y: 1.0700002, z: 18.51}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 0.88, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1508756240}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689691329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689691324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c51a52a5da4cc746a16a07eb00b1ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensetivity: 5
+  smoothing: 2
 --- !u!1 &861210012
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +284,8 @@ GameObject:
   - component: {fileID: 1508756239}
   - component: {fileID: 1508756238}
   - component: {fileID: 1508756237}
+  - component: {fileID: 1508756242}
+  - component: {fileID: 1508756241}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -340,10 +356,38 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 218.94, y: 1.02, z: 22.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 689691328}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508756241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1508756236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a35bc43fb30e6143854cb71bedbf331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 10
+--- !u!54 &1508756242
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1508756236}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2056080428
 GameObject:
   m_ObjectHideFlags: 0
