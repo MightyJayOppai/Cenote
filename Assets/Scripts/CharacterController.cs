@@ -31,4 +31,5 @@ public class CharacterController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }*/
 	}
+
 }
