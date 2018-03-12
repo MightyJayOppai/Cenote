@@ -5,7 +5,7 @@ using UnityEngine;
 public class AIFollow : MonoBehaviour {
 
     Transform Player;
-    public float CompanionSpeed = 4;
+    public float CompanionSpeed = 5;
 
     void Awake()
     {
@@ -20,6 +20,7 @@ public class AIFollow : MonoBehaviour {
 	
 	void Update ()
     {
+        //to make the AI look at the player
         transform.LookAt(Player);
         AICompanion();
         StopBehindPlayer();
@@ -38,7 +39,7 @@ public class AIFollow : MonoBehaviour {
         }
         else
         {
-            CompanionSpeed = 4;
+            CompanionSpeed = 5;
         }
     }
 }

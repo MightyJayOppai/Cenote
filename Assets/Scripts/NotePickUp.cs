@@ -25,7 +25,8 @@ public class NotePickUp : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        //To display the NoteScreen once the player enters the collider
+        if (other.tag == "Player")
         {
             Col = other;
             NotePickUpText.SetActive(true);
@@ -34,7 +35,8 @@ public class NotePickUp : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Player")
+        //To remove the NoteScreen once the player moves away from the collider
+        if (other.tag == "Player")
         {
             Col = null;
             NoteScreen.SetActive(false);
