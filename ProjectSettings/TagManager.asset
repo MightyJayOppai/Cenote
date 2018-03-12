@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Note
   - Companion
+  - GateButton
   layers:
   - Default
   - TransparentFX
