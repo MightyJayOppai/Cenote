@@ -6,6 +6,7 @@ public class GateController : MonoBehaviour {
 
     public GameObject Gate;
     public bool gateIsOpening;
+    public Collider Col;
     public GameObject GateButtonText;
 
 	void Start ()
@@ -29,7 +30,7 @@ public class GateController : MonoBehaviour {
         }
 
         // Once the button is clicked, the gate will open
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Col != null && Input.GetKeyDown(KeyCode.E))
         {
             gateIsOpening = true;
         }
@@ -41,6 +42,7 @@ public class GateController : MonoBehaviour {
         //To display the GateText
         if (other.tag == "Player")
         {
+            Col = other;
             GateButtonText.SetActive(true);
         }
     }
@@ -50,6 +52,7 @@ public class GateController : MonoBehaviour {
         //To remove the GateText 
         if (other.tag == "Player")
         {
+            Col = null;
             GateButtonText.SetActive(false);
         }
     }
