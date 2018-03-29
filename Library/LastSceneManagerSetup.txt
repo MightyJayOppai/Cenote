@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Cenote_TestingArea.unity
+- path: Assets/Cenote_MainGame.unity
   isLoaded: 1
   isActive: 1
