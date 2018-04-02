@@ -22,6 +22,16 @@ public class CameraController : MonoBehaviour
     {
         var mouseMovement = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
+        if (mouselook.y >= 50)
+        {
+            mouselook.y = 50;
+        }
+
+        if (mouselook.y <= -50)
+        {
+            mouselook.y = -50;
+        }
+
         mouseMovement = Vector2.Scale(mouseMovement, new Vector2(sensetivity * smoothing, sensetivity * smoothing));
         smoothV.x = Mathf.Lerp(smoothV.x, mouseMovement.x, 1f / smoothing);
         smoothV.y = Mathf.Lerp(smoothV.y, mouseMovement.y, 1f / smoothing);
