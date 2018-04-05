@@ -2,44 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIFollow : MonoBehaviour {
-
+public class AIFollow : Node
+{
     Transform Player;
     public float CompanionSpeed = 5;
 
-    void Awake()
+    public override void Execute(CompanionBehaviorTree MainBT)
     {
-     
-    }
+        Player = MainBT.Player;
+        curCondition = Condition.RUNNING;
+        //The LookAt Function is currently running
+        MainBT.transform.LookAt(Player);
+        MainBT.transform.position += MainBT.transform.forward * CompanionSpeed * Time.deltaTime;
 
-    void Start ()
-    {
-        Player = GameObject.FindGameObjectWithTag("Player").transform;
-	}
-	
-	
-	void Update ()
-    {
-        //to make the AI look at the player
-        transform.LookAt(Player);
-        AICompanion();
-        StopBehindPlayer();
-	}
-
-    void AICompanion ()
-    {
-        transform.position += transform.forward * CompanionSpeed * Time.deltaTime;
-    }
-
-    void StopBehindPlayer()
-    {
-        if (Vector3.Distance(Player.transform.position, this.transform.position) < 2)
+        if (Vector3.Distance(Player.position, MainBT.transform.position) < 2)
         {
+            curCondition = Condition.FAIL;
             CompanionSpeed = 0;
         }
         else
         {
+            curCondition = Condition.SUCCESS;
             CompanionSpeed = 5;
         }
     }
+
+  
+
 }

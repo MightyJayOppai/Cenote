@@ -10,18 +10,16 @@ public class CompanionBehaviorTree : MonoBehaviour {
 
     public float CompanionFollowDistance;
     public float DistanceToPlayer;
-    public float Angle;
-    public Vector3 TargetDir;
 
 	void Start ()
     {
         Selector selectNode = new Selector();
         Sequencer sequencerNode = new Sequencer();
 
-        root = selectNode;
+        root = new AIFollow();//selectNode;
         selectNode.Children.Add(sequencerNode);
-        //!!!!Recheck this line!!!!
-        //selectNode.Children.Add(new AIFollow());
+        
+        selectNode.Children.Add(new AIFollow());
 	}
 	
 	
