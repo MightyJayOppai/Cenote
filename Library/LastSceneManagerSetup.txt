@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/2nd Puzzle Room.unity
+- path: Assets/Scenes/Cenote_MainGame.unity
   isLoaded: 1
   isActive: 1
