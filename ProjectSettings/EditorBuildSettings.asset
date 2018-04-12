@@ -4,4 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: 825981d685748684cbb0ef1f5bbbf809
+  - enabled: 1
+    path: Assets/Scenes/Room 1st and third.unity
+    guid: 1b254e3d8f9ac4219b33dce8c35915ab
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 2e81d671888d1954f8b55149ec43570f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 2a1b966b8d90b264a8823151bf9ae715
+  - enabled: 1
+    path: Assets/Scenes/2nd Puzzle Room.unity
+    guid: 60717944ed6514f94a73f1f52a84c82a
