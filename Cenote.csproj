@@ -297,11 +297,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\CharacterController.cs" />
-    <Compile Include="Assets\Scripts\Companion AI\AIFollow.cs" />
-    <Compile Include="Assets\Scripts\GatePanel.cs" />
-    <Compile Include="Assets\Scripts\NotePickUp.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\Companion AI\AIDetectImp.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\Companion AI\AIFollow.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\Companion AI\CompanionBehaviorTree.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\Companion AI\Node.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\Companion AI\Selector.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\Companion AI\Sequencer.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\GatePanel.cs" />
+    <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\NotePickUp.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Scene_Manager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
