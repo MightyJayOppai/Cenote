@@ -11,15 +11,20 @@ public class CompanionBehaviorTree : MonoBehaviour {
     public float CompanionFollowDistance;
     public float DistanceToPlayer;
 
+    public Animator anim;
+
 	void Start ()
     {
+        anim = GetComponent<Animator>();
+
         Selector selectNode = new Selector();
         Sequencer sequencerNode = new Sequencer();
 
-        root = new AIFollow();//selectNode;
+        root = selectNode;
         selectNode.Children.Add(sequencerNode);
-        
         selectNode.Children.Add(new AIFollow());
+
+
 	}
 	
 	
