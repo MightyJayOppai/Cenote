@@ -5,12 +5,12 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 
-    Vector2 mouselook;
-    Vector2 smoothV;
-    public float sensetivity = 5.0f;
-    public float smoothing = 2.0f;
+    private Vector2 mouselook;
+    private Vector2 smoothV;
+    private float sensetivity = 5.0f;
+    private float smoothing = 2.0f;
 
-    GameObject character;
+    private GameObject character;
 
 
     void Start()
@@ -31,7 +31,7 @@ public class CameraController : MonoBehaviour
         {
             mouselook.y = -50;
         }
-
+        
         mouseMovement = Vector2.Scale(mouseMovement, new Vector2(sensetivity * smoothing, sensetivity * smoothing));
         smoothV.x = Mathf.Lerp(smoothV.x, mouseMovement.x, 1f / smoothing);
         smoothV.y = Mathf.Lerp(smoothV.y, mouseMovement.y, 1f / smoothing);

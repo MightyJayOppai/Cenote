@@ -12,18 +12,34 @@ public class Scene_Manager : MonoBehaviour
     private int credits_Scene;
     private int secondPuzzle_Scene;
 
-	void Start ()
+    public GolemBehaviorTree golem;
+
+    public GameObject golemComandPanel;
+
+    void Start ()
     {
         mainMenu_Scene = 0;
         game_Scene = 1;
         instructions_Scene = 2;
         credits_Scene = 3;
         secondPuzzle_Scene = 4;
-	}
+
+        golemComandPanel.SetActive(false);
+
+        GameObject golemModel = GameObject.FindGameObjectWithTag("Golem");
+        golem = golemModel.GetComponent<GolemBehaviorTree>();
+    }
 	
 	void Update ()
     {
-		//pause Menu code
+        if (golem.controlledByPlayer == true)
+        {
+            golemComandPanel.SetActive(true);
+        }
+        else if (golem.controlledByPlayer == false)
+        {
+            golemComandPanel.SetActive(false);
+        }
 	}
 
     public void MainMenu()
