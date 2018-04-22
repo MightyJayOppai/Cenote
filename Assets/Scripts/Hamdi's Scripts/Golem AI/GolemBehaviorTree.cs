@@ -5,9 +5,10 @@ using UnityEngine;
 public class GolemBehaviorTree : MonoBehaviour {
 
     public bool controlledByPlayer;
+    public bool shouldGoToPlayer;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

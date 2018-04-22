@@ -7,6 +7,10 @@ TagManager:
   - Note
   - Companion
   - GateButton
+  - Platform
+  - Bridge
+  - Gate
+  - Golem
   layers:
   - Default
   - TransparentFX

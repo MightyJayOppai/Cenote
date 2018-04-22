@@ -293,8 +293,12 @@
     <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\NotePickUp.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Golem AI\GolemBehaviorTree.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Scene_Manager.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Bridge.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Gate.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Ground.cs" />
+    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Platform.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
