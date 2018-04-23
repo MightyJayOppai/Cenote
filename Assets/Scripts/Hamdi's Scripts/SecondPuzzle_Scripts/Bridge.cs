@@ -22,11 +22,13 @@ public class Bridge : MonoBehaviour
         {
             float step = speed * Time.deltaTime;
             this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, upPosition, step);
+
         }
         else if (!way)
         {
             float step = speed * Time.deltaTime;
             this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, downPosition, step);
+
         }
     }
 }

@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-    private float playerSpeed;
-    private float playerWalkSpeed;
-    private float playerRunSpeed;
+    public float playerSpeed;
+    public float playerWalkSpeed;
+    public float playerRunSpeed;
 
-    private float fAndB;
-    private float rAndL;
+    public float fAndB;
+    public float rAndL;
 
-    private Collider cR;
-    private Rigidbody rB;
+    public Collider cR;
+    public Rigidbody rB;
 
-    private GolemBehaviorTree golem;
+    public GolemBehaviorTree golem;
 
 
     void Start ()
