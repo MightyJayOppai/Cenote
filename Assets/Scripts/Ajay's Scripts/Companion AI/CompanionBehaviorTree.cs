@@ -20,7 +20,8 @@ public class CompanionBehaviorTree : MonoBehaviour {
         Selector selectNode = new Selector();
         Sequencer sequencerNode = new Sequencer();
 
-        root = selectNode;
+        root = new AIFollow();
+        //root = selectNode;
         selectNode.Children.Add(sequencerNode);
         selectNode.Children.Add(new AIFollow());
 
