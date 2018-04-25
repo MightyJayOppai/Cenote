@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 7d08215ab3ea03a46a677040044661be
+timeCreated: 1524592671
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Camera001.Target
+    100004: chest
+    100006: chest_ctrl
+    100008: COG
+    100010: head
+    100012: head_ctrl
+    100014: headend
+    100016: IK Chain003
+    100018: IK Chain004
+    100020: IK Chain005
+    100022: IK Chain006
+    100024: IK Chain007
+    100026: IK Chain008
+    100028: IK Chain009
+    100030: IK Chain010
+    100032: //RootNode
+    100034: L_arm
+    100036: L_clavicle
+    100038: L_clavicle_ctrl
+    100040: L_finger1_end
+    100042: L_finger1_joint1
+    100044: L_finger1_joint1_ctrl
+    100046: L_finger1_joint2
+    100048: L_finger1_joint2_ctrl
+    100050: L_finger1_joint3
+    100052: L_finger1_joint3_ctrl
+    100054: L_finger2_end
+    100056: L_finger2_joint1
+    100058: L_finger2_joint1_ctrl
+    100060: L_finger2_joint2
+    100062: L_finger2_joint2_ctrl
+    100064: L_finger2_joint3
+    100066: L_finger2_joint3_ctrl
+    100068: L_finger3_end
+    100070: L_finger3_joint1
+    100072: L_finger3_joint1_ctrl
+    100074: L_finger3_joint2
+    100076: L_finger3_joint2_ctrl
+    100078: L_finger3_joint3
+    100080: L_finger3_joint3 1
+    100082: L_finger3_joint3_ctrl
+    100084: L_finger3_joint3_ctrl 1
+    100086: L_finger4_end
+    100088: L_finger4_joint1
+    100090: L_finger4_joint1_ctrl
+    100092: L_finger4_joint2
+    100094: L_finger4_joint2_ctrl
+    100096: L_finger4_joint3
+    100098: L_finger4_joint3_ctrl
+    100100: L_finger5_end
+    100102: L_finger5_joint1
+    100104: L_finger5_joint1_ctrl
+    100106: L_finger5_joint2
+    100108: L_finger5_joint2_ctrl
+    100110: L_foot
+    100112: L_forearm
+    100114: L_knee
+    100116: L_shin
+    100118: 'L_thigh '
+    100120: L_toeend
+    100122: L_toes
+    100124: L_wrist
+    100126: L_wrist 1
+    100128: L_wristend
+    100130: Line001
+    100132: Line002
+    100134: master ctrl
+    100136: neck
+    100138: neck_ctrl
+    100140: pelvis
+    100142: R_arm
+    100144: R_clavicle
+    100146: R_clavicle_ctrl
+    100148: R_finger1_end
+    100150: R_finger1_joint1
+    100152: R_finger1_joint1_ctrl
+    100154: R_finger1_joint2
+    100156: R_finger1_joint2_ctrl
+    100158: R_finger1_joint3
+    100160: R_finger1_joint3_ctrl
+    100162: R_finger2_end
+    100164: R_finger2_joint1
+    100166: R_finger2_joint1_ctrl
+    100168: R_finger2_joint2
+    100170: R_finger2_joint2_ctrl
+    100172: R_finger2_joint3
+    100174: R_finger2_joint3_ctrl
+    100176: R_finger3_end
+    100178: R_finger3_joint1
+    100180: R_finger3_joint1_ctrl
+    100182: R_finger3_joint2
+    100184: R_finger3_joint2_ctrl
+    100186: R_finger3_joint3
+    100188: R_finger3_joint3 1
+    100190: R_finger3_joint3_ctrl
+    100192: R_finger3_joint3_ctrl 1
+    100194: R_finger4_end
+    100196: R_finger4_joint1
+    100198: R_finger4_joint1_ctrl
+    100200: R_finger4_joint2
+    100202: R_finger4_joint2_ctrl
+    100204: R_finger4_joint3
+    100206: R_finger4_joint3_ctrl
+    100208: R_finger5_end
+    100210: R_finger5_joint1
+    100212: R_finger5_joint1_ctrl
+    100214: R_finger5_joint2
+    100216: R_finger5_joint2_ctrl
+    100218: R_foot
+    100220: R_forearm
+    100222: R_knee
+    100224: R_shin
+    100226: 'R_thigh '
+    100228: R_toeend
+    100230: R_toes
+    100232: R_wrisT
+    100234: R_wrist
+    100236: R_wristend
+    100238: Spot001.Target
+    100240: Spot002.Target
+    100242: Spot003.Target
+    100244: stomach
+    100246: stomach_ctrl
+    400000: Box001
+    400002: Camera001.Target
+    400004: chest
+    400006: chest_ctrl
+    400008: COG
+    400010: head
+    400012: head_ctrl
+    400014: headend
+    400016: IK Chain003
+    400018: IK Chain004
+    400020: IK Chain005
+    400022: IK Chain006
+    400024: IK Chain007
+    400026: IK Chain008
+    400028: IK Chain009
+    400030: IK Chain010
+    400032: //RootNode
+    400034: L_arm
+    400036: L_clavicle
+    400038: L_clavicle_ctrl
+    400040: L_finger1_end
+    400042: L_finger1_joint1
+    400044: L_finger1_joint1_ctrl
+    400046: L_finger1_joint2
+    400048: L_finger1_joint2_ctrl
+    400050: L_finger1_joint3
+    400052: L_finger1_joint3_ctrl
+    400054: L_finger2_end
+    400056: L_finger2_joint1
+    400058: L_finger2_joint1_ctrl
+    400060: L_finger2_joint2
+    400062: L_finger2_joint2_ctrl
+    400064: L_finger2_joint3
+    400066: L_finger2_joint3_ctrl
+    400068: L_finger3_end
+    400070: L_finger3_joint1
+    400072: L_finger3_joint1_ctrl
+    400074: L_finger3_joint2
+    400076: L_finger3_joint2_ctrl
+    400078: L_finger3_joint3
+    400080: L_finger3_joint3 1
+    400082: L_finger3_joint3_ctrl
+    400084: L_finger3_joint3_ctrl 1
+    400086: L_finger4_end
+    400088: L_finger4_joint1
+    400090: L_finger4_joint1_ctrl
+    400092: L_finger4_joint2
+    400094: L_finger4_joint2_ctrl
+    400096: L_finger4_joint3
+    400098: L_finger4_joint3_ctrl
+    400100: L_finger5_end
+    400102: L_finger5_joint1
+    400104: L_finger5_joint1_ctrl
+    400106: L_finger5_joint2
+    400108: L_finger5_joint2_ctrl
+    400110: L_foot
+    400112: L_forearm
+    400114: L_knee
+    400116: L_shin
+    400118: 'L_thigh '
+    400120: L_toeend
+    400122: L_toes
+    400124: L_wrist
+    400126: L_wrist 1
+    400128: L_wristend
+    400130: Line001
+    400132: Line002
+    400134: master ctrl
+    400136: neck
+    400138: neck_ctrl
+    400140: pelvis
+    400142: R_arm
+    400144: R_clavicle
+    400146: R_clavicle_ctrl
+    400148: R_finger1_end
+    400150: R_finger1_joint1
+    400152: R_finger1_joint1_ctrl
+    400154: R_finger1_joint2
+    400156: R_finger1_joint2_ctrl
+    400158: R_finger1_joint3
+    400160: R_finger1_joint3_ctrl
+    400162: R_finger2_end
+    400164: R_finger2_joint1
+    400166: R_finger2_joint1_ctrl
+    400168: R_finger2_joint2
+    400170: R_finger2_joint2_ctrl
+    400172: R_finger2_joint3
+    400174: R_finger2_joint3_ctrl
+    400176: R_finger3_end
+    400178: R_finger3_joint1
+    400180: R_finger3_joint1_ctrl
+    400182: R_finger3_joint2
+    400184: R_finger3_joint2_ctrl
+    400186: R_finger3_joint3
+    400188: R_finger3_joint3 1
+    400190: R_finger3_joint3_ctrl
+    400192: R_finger3_joint3_ctrl 1
+    400194: R_finger4_end
+    400196: R_finger4_joint1
+    400198: R_finger4_joint1_ctrl
+    400200: R_finger4_joint2
+    400202: R_finger4_joint2_ctrl
+    400204: R_finger4_joint3
+    400206: R_finger4_joint3_ctrl
+    400208: R_finger5_end
+    400210: R_finger5_joint1
+    400212: R_finger5_joint1_ctrl
+    400214: R_finger5_joint2
+    400216: R_finger5_joint2_ctrl
+    400218: R_foot
+    400220: R_forearm
+    400222: R_knee
+    400224: R_shin
+    400226: 'R_thigh '
+    400228: R_toeend
+    400230: R_toes
+    400232: R_wrisT
+    400234: R_wrist
+    400236: R_wristend
+    400238: Spot001.Target
+    400240: Spot002.Target
+    400242: Spot003.Target
+    400244: stomach
+    400246: stomach_ctrl
+    2100000: 07 - Default
+    4300000: Box001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
