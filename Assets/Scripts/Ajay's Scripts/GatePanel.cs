@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GatePanel : MonoBehaviour {
 
-    public string CurOrder = "abc";
+    public string CurOrder = "231";
     public string input;
     public bool OnTrigger;
     public bool GateIsOpened;
@@ -41,29 +41,29 @@ public class GatePanel : MonoBehaviour {
             GUI.Box(new Rect(0, 0, 320, 455), "");
             GUI.Box(new Rect(5, 5, 310, 25), input);
 
-            if(GUI.Button(new Rect(5, 35, 100, 100), "a"))
+            if(GUI.Button(new Rect(5, 35, 100, 100), "1"))
             {  
-                input = input + "a";
+                input = input + "1";
             }
-            if (GUI.Button(new Rect(110, 35, 100, 100), "b"))
+            if (GUI.Button(new Rect(110, 35, 100, 100), "2"))
             {
-                input = input + "b";
+                input = input + "2";
             }
-            if (GUI.Button(new Rect(215, 35, 100, 100), "c"))
+            if (GUI.Button(new Rect(215, 35, 100, 100), "3"))
             {
-                input = input + "c";
+                input = input + "3";
             }
-            if (GUI.Button(new Rect(5, 140, 100, 100), "d"))
+            if (GUI.Button(new Rect(5, 140, 100, 100), "4"))
             {
-                input = input + "d";
+                input = input + "4";
             }
-            if (GUI.Button(new Rect(110, 140, 100, 100), "e"))
+            if (GUI.Button(new Rect(110, 140, 100, 100), "5"))
             {
-                input = input + "e";
+                input = input + "5";
             }
-            if (GUI.Button(new Rect(215, 140, 100, 100), "f"))
+            if (GUI.Button(new Rect(215, 140, 100, 100), "6"))
             {
-                input = input + "f";
+                input = input + "6";
             }
         }
     }
@@ -83,7 +83,7 @@ public class GatePanel : MonoBehaviour {
 
         if (GateIsOpened)
         {
-            var newRotation = Quaternion.RotateTowards(GateHinge.rotation, Quaternion.Euler(0.0f, 180.0f, 0.0f), Time.deltaTime * 25);
+            var newRotation = Quaternion.RotateTowards(GateHinge.rotation, Quaternion.Euler(0.0f, -38.577f, -100f), Time.deltaTime * 50);
             GateHinge.rotation = newRotation;
         }
 	}
