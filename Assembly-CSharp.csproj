@@ -61,9 +61,14 @@
      <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\GatePanel.cs" />
      <Compile Include="Assets\Scripts\Ajay&apos;s Scripts\NotePickUp.cs" />
      <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Golem AI\GolemBehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\MovementController.cs" />
      <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Scene_Manager.cs" />
+     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Bridge.cs" />
+     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Gate.cs" />
+     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Ground.cs" />
+     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Platform.cs" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
