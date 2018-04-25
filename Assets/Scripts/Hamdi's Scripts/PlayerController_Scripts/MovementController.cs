@@ -21,10 +21,10 @@ public class MovementController : MonoBehaviour
     public GolemBehaviorTree golem;
 
     public GameObject[] levers;
-    public GameObject thirdRoomDoor;
-    public bool hitLeverOne;
-    public bool hitLeverTwo;
-    public bool hitLeverThree;
+    private bool hitLeverOne;
+    private bool hitLeverTwo;
+    private bool hitLeverThree;
+    private Animator levelThreeDoorAnim;
 
     void Start ()
     {
@@ -43,7 +43,7 @@ public class MovementController : MonoBehaviour
             levers[i].SetActive(false);
         }
 
-        thirdRoomDoor = GameObject.FindGameObjectWithTag("ThirdRoomDoor");
+        levelThreeDoorAnim = GameObject.FindGameObjectWithTag("ThirdRoomDoor").GetComponent<Animator>();
 
         // to lock the mouse to the game
         //Cursor.lockState = CursorLockMode.Locked;
@@ -71,12 +71,7 @@ public class MovementController : MonoBehaviour
             golem.shouldGoToPlayer = true;
         }
 
-        if(hitLeverThree)
-        {
-            thirdRoomDoor.SetActive(false);
-        }
-
-        if(panelCol != null && Input.GetKey(KeyCode.E))
+        if (panelCol != null && Input.GetKey(KeyCode.E))
         {
             for (int i = 0; i < levers.Length; i++)
             {
@@ -84,7 +79,12 @@ public class MovementController : MonoBehaviour
             }
         }
 
-        if(lever1Col != null && Input.GetKey(KeyCode.E))
+        if (hitLeverThree)
+            levelThreeDoorAnim.SetBool("isMoving", true);
+        else
+            levelThreeDoorAnim.SetBool("isMoving", false);
+
+        if (lever1Col != null && Input.GetKey(KeyCode.E))
         {
             hitLeverOne = true;
         }
