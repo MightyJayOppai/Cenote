@@ -171,7 +171,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 2a3a76d7cb9ce6146a4336373d8cd357, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a17fbf6e72f6c4841944d408a1b2e92b, type: 2}
+      objectReference: {fileID: 2100000, guid: 7d66983154f0375489bee7deacc416a1, type: 2}
     - target: {fileID: 100000, guid: 2a3a76d7cb9ce6146a4336373d8cd357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2020,7 +2020,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7df2976c54f3679478232bef8700c89a, type: 2}
+  - {fileID: 2100000, guid: ee6becf5dc178854fb40d05d09c45566, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
