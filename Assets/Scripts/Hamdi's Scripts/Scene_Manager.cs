@@ -38,6 +38,7 @@ public class Scene_Manager : MonoBehaviour
         {
             player.transform.position = new Vector3(-11.17f, 2.684f, -15.37f);
         }
+
     }
 	
 	void Update ()
