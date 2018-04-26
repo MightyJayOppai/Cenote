@@ -1146,6 +1146,11 @@ Prefab:
       propertyPath: golemComandPanel
       value: 
       objectReference: {fileID: 520669630}
+    - target: {fileID: 114335262281808052, guid: b03d2719db62ce049985d80fd1013879,
+        type: 2}
+      propertyPath: sensetivity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b03d2719db62ce049985d80fd1013879, type: 2}
   m_IsPrefabParent: 0

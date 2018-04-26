@@ -2983,15 +2983,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4424671721097448, guid: b03d2719db62ce049985d80fd1013879, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.886
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 4424671721097448, guid: b03d2719db62ce049985d80fd1013879, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.1
+      value: 2.139
       objectReference: {fileID: 0}
     - target: {fileID: 4424671721097448, guid: b03d2719db62ce049985d80fd1013879, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.416
+      value: -2.884
       objectReference: {fileID: 0}
     - target: {fileID: 4424671721097448, guid: b03d2719db62ce049985d80fd1013879, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3104,6 +3104,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114424550934741190, guid: b03d2719db62ce049985d80fd1013879,
+        type: 2}
+      propertyPath: levelThreeDoorAnim
+      value: 
+      objectReference: {fileID: 1112998188}
     m_RemovedComponents:
     - {fileID: 114424242384368674, guid: b03d2719db62ce049985d80fd1013879, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b03d2719db62ce049985d80fd1013879, type: 2}
@@ -6854,6 +6859,11 @@ Transform:
 --- !u!1 &1112998187 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 02a9e369120b19b42969beb129efa807, type: 3}
+  m_PrefabInternal: {fileID: 304814088}
+--- !u!95 &1112998188 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 02a9e369120b19b42969beb129efa807,
+    type: 3}
   m_PrefabInternal: {fileID: 304814088}
 --- !u!65 &1112998191
 BoxCollider:
