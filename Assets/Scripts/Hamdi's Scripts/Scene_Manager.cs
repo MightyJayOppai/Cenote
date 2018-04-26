@@ -16,6 +16,10 @@ public class Scene_Manager : MonoBehaviour
 
     public GameObject golemComandPanel;
 
+    public bool doneFromRoom2;
+
+    public GameObject player;
+
     void Start ()
     {
         mainMenu_Scene = 0;
@@ -28,6 +32,11 @@ public class Scene_Manager : MonoBehaviour
 
         GameObject golemModel = GameObject.FindGameObjectWithTag("Golem");
         golem = golemModel.GetComponent<GolemBehaviorTree>();
+
+        if (doneFromRoom2 == true)
+        {
+            player.transform.position = new Vector3(0, 0, 0);
+        }
     }
 	
 	void Update ()

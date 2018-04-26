@@ -9,10 +9,15 @@ public class Bridge : MonoBehaviour
     Vector3 upPosition;
     Vector3 downPosition;
 
+    public AudioClip aClip;
+    public AudioSource aSource;
+
     void Start ()
     {
+        aSource.clip = aClip;
+
         downPosition = this.transform.position;
-        upPosition = downPosition + new Vector3(0f, 6.95f, 0f);
+        upPosition = downPosition + new Vector3(0f, 0.6f, 0f);
         speed = 5f;
     }
 	
@@ -22,7 +27,7 @@ public class Bridge : MonoBehaviour
         {
             float step = speed * Time.deltaTime;
             this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, upPosition, step);
-
+            //aSource.PlayOneShot(aClip);
         }
         else if (!way)
         {

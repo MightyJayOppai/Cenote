@@ -16,8 +16,8 @@ public class Gate : MonoBehaviour
     {
         thirdPuzzleScene = 5;
 
-        speed = 5f;
-        targetPosition = gate.transform.position + new Vector3(6, 0, 0);
+        speed = 1f;
+        targetPosition = gate.transform.position + new Vector3(0, -5, 0);
     }
 
     private void Update()
@@ -33,6 +33,8 @@ public class Gate : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
+            //SceneManager.doneFromRoom2 = true;
             SceneManager.LoadScene(thirdPuzzleScene);
             Time.timeScale = 1;
         }
