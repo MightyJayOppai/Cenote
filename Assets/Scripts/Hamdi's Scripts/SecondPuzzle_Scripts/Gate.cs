@@ -12,9 +12,14 @@ public class Gate : MonoBehaviour
     private Vector3 targetPosition;
     public bool gateShouldMove;
 
+    public Static staticObj;
+
     private void Start()
     {
-        thirdPuzzleScene = 5;
+        GameObject staticObgHolder = GameObject.FindGameObjectWithTag("Static");
+        staticObj = staticObgHolder.GetComponent<Static>();
+
+        thirdPuzzleScene = 1;
 
         speed = 1f;
         targetPosition = gate.transform.position + new Vector3(0, -5, 0);
@@ -33,8 +38,7 @@ public class Gate : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-
-            //SceneManager.doneFromRoom2 = true;
+            staticObj.doneFromSecondPuzzle = true;
             SceneManager.LoadScene(thirdPuzzleScene);
             Time.timeScale = 1;
         }

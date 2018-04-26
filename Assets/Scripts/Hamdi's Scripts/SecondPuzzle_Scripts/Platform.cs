@@ -30,6 +30,7 @@ public class Platform : MonoBehaviour
 
             golem.controlledByPlayer = false;
             GateToRoomThree.gateShouldMove = true;
+            this.gameObject.SetActive(false);
         }
 
         else if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Golem"))

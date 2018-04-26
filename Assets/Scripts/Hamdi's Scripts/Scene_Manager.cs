@@ -16,9 +16,9 @@ public class Scene_Manager : MonoBehaviour
 
     public GameObject golemComandPanel;
 
-    public bool doneFromRoom2;
-
     public GameObject player;
+
+    public Static staticObj;
 
     void Start ()
     {
@@ -33,9 +33,13 @@ public class Scene_Manager : MonoBehaviour
         GameObject golemModel = GameObject.FindGameObjectWithTag("Golem");
         golem = golemModel.GetComponent<GolemBehaviorTree>();
 
-        if (doneFromRoom2 == true)
+        GameObject staticObgHolder = GameObject.FindGameObjectWithTag("Static");
+        staticObj = staticObgHolder.GetComponent<Static>();
+
+        if (staticObj.doneFromSecondPuzzle == true)
         {
-            player.transform.position = new Vector3(0, 0, 0);
+            //player.transform.position = new Vector3(0, 0, 0);
+            print("done from puzzle room");
         }
     }
 	
