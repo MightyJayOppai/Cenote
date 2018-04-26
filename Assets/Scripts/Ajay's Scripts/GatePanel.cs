@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GatePanel : MonoBehaviour {
 
-    public string CurOrder = "231";
+    public string CurOrder = "869";
     public string input;
     public bool OnTrigger;
     public bool GateIsOpened;
@@ -64,6 +64,18 @@ public class GatePanel : MonoBehaviour {
             if (GUI.Button(new Rect(215, 140, 100, 100), "6"))
             {
                 input = input + "6";
+            }
+            if (GUI.Button(new Rect(5, 245, 100, 100), "7"))
+            {
+                input = input + "7";
+            }
+            if (GUI.Button(new Rect(110, 245, 100, 100), "8"))
+            {
+                input = input + "8";
+            }
+            if (GUI.Button(new Rect(215, 245, 100, 100), "9"))
+            {
+                input = input + "9";
             }
         }
     }
