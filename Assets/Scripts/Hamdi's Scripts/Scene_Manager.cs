@@ -38,7 +38,7 @@ public class Scene_Manager : MonoBehaviour
 
         if (staticObj.doneFromSecondPuzzle == true)
         {
-            //player.transform.position = new Vector3(0, 0, 0);
+            player.transform.position = new Vector3(-11.17f, 2.684f, -15.37f);
             print("done from puzzle room");
         }
     }

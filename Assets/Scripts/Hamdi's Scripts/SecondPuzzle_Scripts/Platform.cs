@@ -53,7 +53,7 @@ public class Platform : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision collision)
+    /*void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player") && (this.gameObject.name == "PlatformE" || this.gameObject.name == "PlatformD"))
         {
@@ -62,5 +62,5 @@ public class Platform : MonoBehaviour
                 bridges[i].way = false;
             }
         }
-    }
+    }*/
 }
