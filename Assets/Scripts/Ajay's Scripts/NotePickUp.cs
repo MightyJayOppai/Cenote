@@ -8,10 +8,15 @@ public class NotePickUp : MonoBehaviour {
     public Collider Col;
     public GameObject NotePickUpText;
 
+    private AudioSource aud;
+    public AudioClip audNote;
+
 	void Start ()
     {
         NoteScreen.SetActive(false);
         NotePickUpText.SetActive(false);
+
+        aud = GetComponent<AudioSource>();
 	}
 	
 	
@@ -20,6 +25,10 @@ public class NotePickUp : MonoBehaviour {
 		if(Col!= null && Input.GetKeyDown(KeyCode.E))
         {
             NoteScreen.SetActive(!NoteScreen.activeSelf);
+            if (NoteScreen.activeSelf)
+            {
+                aud.PlayOneShot(audNote, 0.2f);
+            }
         }
 	}
 

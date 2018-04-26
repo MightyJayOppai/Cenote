@@ -32,7 +32,7 @@ public class MovementController : MonoBehaviour
         //golem = golemModel.GetComponent<GolemBehaviorTree>();
 
         playerWalkSpeed = 1.0f;
-        playerRunSpeed = 10.0f;
+        playerRunSpeed = 5.0f;
         playerSpeed = playerWalkSpeed;
 
         rB = GetComponentInChildren<Rigidbody>();
