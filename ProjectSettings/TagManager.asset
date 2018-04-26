@@ -17,6 +17,7 @@ TagManager:
   - Lever2
   - Lever3
   - ThirdRoomDoor
+  - Static
   layers:
   - Default
   - TransparentFX

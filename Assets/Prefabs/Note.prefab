@@ -98,6 +98,7 @@ MonoBehaviour:
   NoteScreen: {fileID: 0}
   Col: {fileID: 0}
   NotePickUpText: {fileID: 0}
+  audNote: {fileID: 0}
 --- !u!136 &136722890507557822
 CapsuleCollider:
   m_ObjectHideFlags: 1

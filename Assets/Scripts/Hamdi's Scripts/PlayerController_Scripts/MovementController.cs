@@ -13,37 +13,37 @@ public class MovementController : MonoBehaviour
 
     public Collider cR;
     public Rigidbody rB;
-    public Collider panelCol;
+    /*public Collider panelCol;
     public Collider lever1Col;
     public Collider lever2Col;
-    public Collider lever3Col;
+    public Collider lever3Col;*/
 
     public GolemBehaviorTree golem;
 
-    public GameObject[] levers;
+    /*public GameObject[] levers;
     private bool hitLeverOne;
     private bool hitLeverTwo;
     private bool hitLeverThree;
-    private Animator levelThreeDoorAnim;
+    private Animator levelThreeDoorAnim;*/
 
     void Start ()
     {
         GameObject golemModel = GameObject.FindGameObjectWithTag("Golem");
-        //golem = golemModel.GetComponent<GolemBehaviorTree>();
+        golem = golemModel.GetComponent<GolemBehaviorTree>();
 
-        playerWalkSpeed = 1.0f;
+        playerWalkSpeed = 2.0f;
         playerRunSpeed = 5.0f;
         playerSpeed = playerWalkSpeed;
 
         rB = GetComponentInChildren<Rigidbody>();
         cR = GetComponentInChildren<Collider>();
 
-        for (int i = 0; i < levers.Length; i++)
+        /*for (int i = 0; i < levers.Length; i++)
         {
             levers[i].SetActive(false);
-        }
+        }*/
 
-        levelThreeDoorAnim = GameObject.FindGameObjectWithTag("ThirdRoomDoor").GetComponent<Animator>();
+        //levelThreeDoorAnim = GameObject.FindGameObjectWithTag("ThirdRoomDoor").GetComponent<Animator>();
 
         // to lock the mouse to the game
         //Cursor.lockState = CursorLockMode.Locked;
@@ -71,7 +71,7 @@ public class MovementController : MonoBehaviour
             golem.shouldGoToPlayer = true;
         }
 
-        if (panelCol != null && Input.GetKey(KeyCode.E))
+        /*if (panelCol != null && Input.GetKey(KeyCode.E))
         {
             for (int i = 0; i < levers.Length; i++)
             {
@@ -106,7 +106,7 @@ public class MovementController : MonoBehaviour
         }*/
     }
 
-    void OnCollisionEnter(Collision other)
+    /*void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Panel")
         {
@@ -150,5 +150,5 @@ public class MovementController : MonoBehaviour
         {
             lever3Col = null;
         }
-    }
+    }*/
 }
