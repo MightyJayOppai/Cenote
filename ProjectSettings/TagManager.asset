@@ -12,6 +12,11 @@ TagManager:
   - Gate
   - Golem
   - UI
+  - Panel
+  - Lever1
+  - Lever2
+  - Lever3
+  - ThirdRoomDoor
   layers:
   - Default
   - TransparentFX
