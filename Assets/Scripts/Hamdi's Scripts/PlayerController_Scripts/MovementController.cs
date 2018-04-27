@@ -64,7 +64,7 @@ public class MovementController : MonoBehaviour
         //the function that moves the player
         transform.Translate(rAndL, 0, fAndB);
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G) && golem.controlledByPlayer == true)
         {
             golem.shouldGoToPlayer = true;
         }
