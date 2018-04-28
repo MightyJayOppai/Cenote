@@ -7,14 +7,14 @@ public class AIFollow : Node
     Transform Player;
     public float CompanionSpeed = 5;
     public CompanionBehaviorTree companion;
-    public Animator compnionAnim;
+    public Animator companionAnim;
     
     public override void Execute(CompanionBehaviorTree MainBT)
     {
         GameObject companionModel = GameObject.FindGameObjectWithTag("Companion");
         companion = companionModel.GetComponent<CompanionBehaviorTree>();
 
-        compnionAnim = companion.anim;
+        companionAnim = companion.anim;
 
         Player = MainBT.Player;
         curCondition = Condition.RUNNING;
@@ -22,17 +22,19 @@ public class AIFollow : Node
         MainBT.transform.LookAt(Player);
         MainBT.transform.position += MainBT.transform.forward * CompanionSpeed * Time.deltaTime;
 
-        if (Vector3.Distance(Player.position, MainBT.transform.position) < 1)
+        if (Vector3.Distance(Player.position, MainBT.transform.position) < 1.5)
         {
-            compnionAnim.SetTrigger("Idle");
-            curCondition = Condition.FAIL;
+            companionAnim.SetTrigger("Idle");
+            curCondition = Condition.SUCCESS;
             CompanionSpeed = 0;
+            //Companion has reached the player
         }
         else
         {
-            compnionAnim.SetTrigger("Walk");
-            curCondition = Condition.SUCCESS;
+            companionAnim.SetTrigger("Walk");
+            curCondition = Condition.FAIL;
             CompanionSpeed = 5;
+            //Companion is far and needs to walk to the player
         }
     }
 

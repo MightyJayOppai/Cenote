@@ -8,8 +8,6 @@ public class CompanionBehaviorTree : MonoBehaviour {
     public float CompanionSpeed;
     public Transform Player;
 
-    public float CompanionFollowDistance;
-    public float DistanceToPlayer;
 
     public Animator anim;
 

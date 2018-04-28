@@ -2266,20 +2266,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   way: 0
-  aClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
-  aSource: {fileID: 640403244}
+  aClip: {fileID: 8300000, guid: a4eb468f32d75264db5b9aabd34d4a23, type: 3}
 --- !u!82 &640403244
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 640403242}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2529,8 +2528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompanionSpeed: 1
   Player: {fileID: 1779518702}
-  CompanionFollowDistance: 0
-  DistanceToPlayer: 0
+  AudComp: {fileID: 0}
   anim: {fileID: 9500000, guid: d0b643bcc49e35247a4914fd0683e74f, type: 3}
 --- !u!1 &727676501
 GameObject:
@@ -3938,20 +3936,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   way: 0
-  aClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
-  aSource: {fileID: 1096286911}
+  aClip: {fileID: 8300000, guid: a4eb468f32d75264db5b9aabd34d4a23, type: 3}
 --- !u!82 &1096286911
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1096286909}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5329,8 +5326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   way: 0
-  aClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
-  aSource: {fileID: 1482756642}
+  aClip: {fileID: 8300000, guid: a4eb468f32d75264db5b9aabd34d4a23, type: 3}
 --- !u!4 &1482756641
 Transform:
   m_ObjectHideFlags: 0
@@ -5357,12 +5353,12 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482756639}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5751,20 +5747,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   way: 0
-  aClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
-  aSource: {fileID: 1644158027}
+  aClip: {fileID: 8300000, guid: a4eb468f32d75264db5b9aabd34d4a23, type: 3}
 --- !u!82 &1644158027
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644158025}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5931,20 +5926,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   way: 0
-  aClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
-  aSource: {fileID: 1685377927}
+  aClip: {fileID: 8300000, guid: a4eb468f32d75264db5b9aabd34d4a23, type: 3}
 --- !u!82 &1685377927
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1685377925}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6564,20 +6558,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   way: 0
-  aClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
-  aSource: {fileID: 1881759735}
+  aClip: {fileID: 8300000, guid: a4eb468f32d75264db5b9aabd34d4a23, type: 3}
 --- !u!82 &1881759735
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1881759733}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b46545f6e1df2e4c8f29ef7abe30996, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
