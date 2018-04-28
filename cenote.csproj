@@ -311,7 +311,6 @@
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Golem AI\GolemBehaviorTree.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\MovementController.cs" />
-    <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\PlayerController_Scripts\Player_GolemControls.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\Scene_Manager.cs" />
     <Compile Include="Assets\Scripts\Hamdi&apos;s Scripts\SecondPuzzle_Scripts\Bridge.cs" />

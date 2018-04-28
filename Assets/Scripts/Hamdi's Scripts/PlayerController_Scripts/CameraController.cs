@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 
     public GameObject character;
 
-    public PauseMenu pauseMenu;
+    public Scene_Manager pauseMenu;
 
 
     void Start()
@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
         character = this.transform.parent.gameObject;
 
         GameObject ui = GameObject.FindGameObjectWithTag("UI");
-        pauseMenu = ui.GetComponent<PauseMenu>();
+        pauseMenu = ui.GetComponent<Scene_Manager>();
     }
 
     void Update()

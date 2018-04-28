@@ -12,22 +12,26 @@ public class Scene_Manager : MonoBehaviour
     private int credits_Scene;
     private int secondPuzzle_Scene;
 
-    public GolemBehaviorTree golem;
-
     public GameObject player;
 
     public Static staticObj;
 
+    public GameObject pause_Menu;
+    public bool paused;
+    public GameObject instructions_Panel;
+
     void Start ()
     {
+        pause_Menu.SetActive(false);
+        instructions_Panel.SetActive(false);
+
+        paused = false;
+
         mainMenu_Scene = 0;
         game_Scene = 1;
         instructions_Scene = 2;
         credits_Scene = 3;
         secondPuzzle_Scene = 4;
-
-        GameObject golemModel = GameObject.FindGameObjectWithTag("Golem");
-        golem = golemModel.GetComponent<GolemBehaviorTree>();
 
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -43,8 +47,22 @@ public class Scene_Manager : MonoBehaviour
 	
 	void Update ()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            paused = !paused;
 
-	}
+            if (paused == true)
+            {
+                pause_Menu.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else if (paused == false)
+            {
+                pause_Menu.SetActive(false);
+                Time.timeScale = 1;
+            }
+        }
+    }
 
     public void MainMenu()
     {
@@ -79,5 +97,24 @@ public class Scene_Manager : MonoBehaviour
     {
         SceneManager.LoadScene(secondPuzzle_Scene);
         Time.timeScale = 1;
+    }
+
+    public void Resume()
+    {
+        pause_Menu.SetActive(false);
+        paused = false;
+        Time.timeScale = 1;
+    }
+
+    public void InGameInstructions()
+    {
+        pause_Menu.SetActive(false);
+        instructions_Panel.SetActive(true);
+    }
+
+    public void BackToPauseMenu()
+    {
+        instructions_Panel.SetActive(false);
+        pause_Menu.SetActive(true);
     }
 }

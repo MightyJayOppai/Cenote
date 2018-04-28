@@ -7,6 +7,8 @@ public class Player_GolemControls : MonoBehaviour
 {
     public GameObject golemComandPanel;
 
+    public GameObject companionComandPanel;
+
     public GolemBehaviorTree golem;
 
     public bool inSecondScene;
@@ -19,25 +21,24 @@ public class Player_GolemControls : MonoBehaviour
         golem = golemModel.GetComponent<GolemBehaviorTree>();
 
         golemComandPanel.SetActive(false);
-
-        if (currentScene.name == "2nd Puzzle Room")
-        {
-            inSecondScene = true;
-        }
+        companionComandPanel.SetActive(true);
     }
 
     void Update()
     {
-        if (inSecondScene == true)
-        {
+            if (golem.controlledByPlayer == false && Input.GetKeyDown(KeyCode.G))
+            {
+                golem.controlledByPlayer = true;
+            }
             if (golem.controlledByPlayer == true)
             {
+                companionComandPanel.SetActive(false);
                 golemComandPanel.SetActive(true);
             }
             else if (golem.controlledByPlayer == false)
             {
+                companionComandPanel.SetActive(true);
                 golemComandPanel.SetActive(false);
             }
-        }
     }
 }
