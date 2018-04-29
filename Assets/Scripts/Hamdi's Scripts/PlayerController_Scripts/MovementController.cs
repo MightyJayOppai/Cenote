@@ -14,11 +14,12 @@ public class MovementController : MonoBehaviour
     public Collider cR;
     public Rigidbody rB;
 
-    //public AudioClip[] aClip;
+    public AudioClip[] aClip;
     private AudioSource aSource;
 
     public Static staticObj;
 
+    //Khatim's Code
     private Collider panelCol;
     private Collider lever1Col;
     private Collider lever2Col;
@@ -42,13 +43,14 @@ public class MovementController : MonoBehaviour
         GameObject staticObgHolder = GameObject.FindGameObjectWithTag("Static");
         staticObj = staticObgHolder.GetComponent<Static>();
 
+        aSource = GetComponent<AudioSource>();
+
         playerWalkSpeed = 2.0f;
         playerRunSpeed = 5.0f;
         playerSpeed = playerWalkSpeed;
 
         rB = GetComponentInChildren<Rigidbody>();
         cR = GetComponentInChildren<Collider>();
-        aSource = GetComponent<AudioSource>();
 
         for (int i = 0; i < levers.Length; i++)
         {
@@ -98,6 +100,7 @@ public class MovementController : MonoBehaviour
             }
         }
 
+        //Khatim's Code
         if (hitLeverThree)
             levelThreeDoorAnim.SetBool("isMoving", true);
 

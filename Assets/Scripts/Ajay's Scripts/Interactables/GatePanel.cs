@@ -20,6 +20,7 @@ public class GatePanel : MonoBehaviour {
     {
         OnTrigger = false;
         GatePanelScreen = false;
+        Cursor.lockState = CursorLockMode.Locked;
         input = "";
     }
 
@@ -33,6 +34,7 @@ public class GatePanel : MonoBehaviour {
             {
                 GatePanelScreen = true;
                 OnTrigger = false;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
 
