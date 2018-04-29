@@ -180,17 +180,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Movement - Press W - A - S - D to move in the respective direction
-
-
-    Action - Press E to interact with the invoirment
-
-
-
-    Camera - Use your mouse to move the camer around
-
-
-    Run - Hold the Shift button while moving to run'
+  m_Text: "Movement - Press W - A - S - D to move in the respective direction\n\nAction
+    - Press E to interact with the environment\n\n\nCamera - Use your mouse to move
+    the camera\n around\n\nRun - Hold the Shift button while moving to run"
 --- !u!222 &272501876
 CanvasRenderer:
   m_ObjectHideFlags: 0
