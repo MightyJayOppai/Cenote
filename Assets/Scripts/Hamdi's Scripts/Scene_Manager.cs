@@ -55,10 +55,12 @@ public class Scene_Manager : MonoBehaviour
             {
                 pause_Menu.SetActive(true);
                 Time.timeScale = 0;
+                Cursor.lockState = CursorLockMode.None;
             }
             else if (paused == false)
             {
                 pause_Menu.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
                 Time.timeScale = 1;
             }
         }
@@ -103,6 +105,7 @@ public class Scene_Manager : MonoBehaviour
     {
         pause_Menu.SetActive(false);
         paused = false;
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
     }
 

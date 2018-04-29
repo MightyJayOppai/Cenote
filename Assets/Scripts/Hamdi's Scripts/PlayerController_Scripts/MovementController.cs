@@ -13,23 +13,34 @@ public class MovementController : MonoBehaviour
 
     public Collider cR;
     public Rigidbody rB;
+
+    //public AudioClip[] aClip;
+    private AudioSource aSource;
+
+    public Static staticObj;
+
     private Collider panelCol;
     private Collider lever1Col;
     private Collider lever2Col;
     private Collider lever3Col;
 
     public GolemBehaviorTree golem;
+
     public Animator levelThreeDoorAnim;
 
     public GameObject[] levers;
     private bool hitLeverOne;
     private bool hitLeverTwo;
     private bool hitLeverThree;
+
     
     void Start ()
     {
         GameObject golemModel = GameObject.FindGameObjectWithTag("Golem");
         golem = golemModel.GetComponent<GolemBehaviorTree>();
+
+        GameObject staticObgHolder = GameObject.FindGameObjectWithTag("Static");
+        staticObj = staticObgHolder.GetComponent<Static>();
 
         playerWalkSpeed = 2.0f;
         playerRunSpeed = 5.0f;
@@ -37,18 +48,25 @@ public class MovementController : MonoBehaviour
 
         rB = GetComponentInChildren<Rigidbody>();
         cR = GetComponentInChildren<Collider>();
+        aSource = GetComponent<AudioSource>();
 
         for (int i = 0; i < levers.Length; i++)
         {
             levers[i].SetActive(false);
         }
 
-        // to lock the mouse to the game
-        //Cursor.lockState = CursorLockMode.Locked;
+         //to lock the mouse to the game
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 	void FixedUpdate ()
     {
+        if (staticObj.disablePlayerRigidBody == true)
+        {
+            rB.useGravity = false;
+            rB.detectCollisions = false;
+        }
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             playerSpeed = playerRunSpeed;
@@ -62,7 +80,10 @@ public class MovementController : MonoBehaviour
         rAndL = Input.GetAxis("Horizontal") * playerSpeed * Time.deltaTime;
 
         //the function that moves the player
-        transform.Translate(rAndL, 0, fAndB);
+        if (staticObj.controlsDisabled == false)
+        {
+            transform.Translate(rAndL, 0, fAndB);
+        }
 
         if (Input.GetKeyDown(KeyCode.G) && golem.controlledByPlayer == true)
         {
@@ -95,11 +116,16 @@ public class MovementController : MonoBehaviour
             hitLeverThree = true;
         }
 
-        //to cancel the mouse lock
-        /*if (Input.GetKeyDown("escape"))
+        if (rB.IsSleeping())
         {
-            Cursor.lockState = CursorLockMode.None;
-        }*/
+            print("not moving");
+            aSource.Pause();
+        }
+        else
+        {
+            print("moving");
+            aSource.Play();
+        }
     }
 
     void OnCollisionEnter(Collision other)

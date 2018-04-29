@@ -8,8 +8,11 @@ public class Static : MonoBehaviour
     public bool doneFromSecondPuzzle;
     //Ajay
     public bool doneFromThirdPuzzle;
+    //End game
+    public bool controlsDisabled;
+    public bool disablePlayerRigidBody;
 
-	void Start ()
+    void Start ()
     {
         DontDestroyOnLoad(this.gameObject);
 	}
