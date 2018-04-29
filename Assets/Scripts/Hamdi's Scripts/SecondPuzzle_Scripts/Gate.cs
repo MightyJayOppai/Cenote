@@ -14,12 +14,16 @@ public class Gate : MonoBehaviour
 
     public Static staticObj;
 
+    private AudioSource aSource;
+
     private void Start()
     {
         GameObject staticObgHolder = GameObject.FindGameObjectWithTag("Static");
         staticObj = staticObgHolder.GetComponent<Static>();
 
         thirdPuzzleScene = 1;
+
+        aSource = GetComponent<AudioSource>();
 
         speed = 1f;
         targetPosition = gate.transform.position + new Vector3(0, -5, 0);
@@ -31,7 +35,14 @@ public class Gate : MonoBehaviour
         {
             float step = speed * Time.deltaTime;
             gate.transform.position = Vector3.MoveTowards(gate.transform.position, targetPosition, step);
+            aSource.Play();
+            Invoke("StopSound", 4f);
         }
+    }
+
+    void StopSound()
+    {
+        aSource.Pause();
     }
 
     private void OnCollisionEnter(Collision collision)

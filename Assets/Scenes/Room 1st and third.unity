@@ -2802,6 +2802,91 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88751e818ce804ebeba39e862ef7e36c, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &469409438 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1942146384354066, guid: b03d2719db62ce049985d80fd1013879,
+    type: 2}
+  m_PrefabInternal: {fileID: 567192035}
+--- !u!82 &469409444
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469409438}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7e4bf89070917a5479e68eab55314537, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!4 &470788991 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 93badd9d5da68488aabef1be8a1f7323, type: 3}
@@ -2983,7 +3068,7 @@ Prefab:
     - target: {fileID: 54533489416105260, guid: b03d2719db62ce049985d80fd1013879,
         type: 2}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114335262281808052, guid: b03d2719db62ce049985d80fd1013879,
         type: 2}
@@ -11559,7 +11644,8 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114125417358199212, guid: 28318e80a096b6f408d32467920bb76d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 28318e80a096b6f408d32467920bb76d, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &1781715008 stripped
@@ -12689,7 +12775,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1942952881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.62, y: 0, z: -9.27}
+  m_LocalPosition: {x: 0.493, y: -0.64, z: 0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1445187990}
@@ -12707,6 +12793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staticObj: {fileID: 0}
+  player: {fileID: 0}
+  playerShouldClimb: 0
 --- !u!65 &1942952884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12717,8 +12805,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.982825, y: 1.9269962, z: 1}
-  m_Center: {x: 0, y: -0.13273144, z: 0}
+  m_Size: {x: 0.29876018, y: 2.2078557, z: 0.4713614}
+  m_Center: {x: -0.016844869, y: -0.27316117, z: 0.17870903}
 --- !u!1001 &1948718515
 Prefab:
   m_ObjectHideFlags: 0
