@@ -10,6 +10,7 @@ public class GatePanel : MonoBehaviour {
     public bool GateIsOpened;
     public bool GatePanelScreen;
     public Transform GateHinge;
+    public Static staticObj;
 
     void OnTriggerEnter(Collider other)
     {
@@ -84,8 +85,9 @@ public class GatePanel : MonoBehaviour {
 
     void Start ()
     {
-		
-	}
+        GameObject staticObgHolder = GameObject.FindGameObjectWithTag("Static");
+        staticObj = staticObgHolder.GetComponent<Static>();
+    }
 	
 	
 	void Update ()
@@ -97,6 +99,13 @@ public class GatePanel : MonoBehaviour {
 
         if (GateIsOpened)
         {
+            var newRotation = Quaternion.RotateTowards(GateHinge.rotation, Quaternion.Euler(0.0f, -38.577f, -100f), Time.deltaTime * 50);
+            GateHinge.rotation = newRotation;
+        }
+
+        if (staticObj.doneFromThirdPuzzle == true)
+        {
+            print("door should go up");
             var newRotation = Quaternion.RotateTowards(GateHinge.rotation, Quaternion.Euler(0.0f, -38.577f, -100f), Time.deltaTime * 50);
             GateHinge.rotation = newRotation;
         }

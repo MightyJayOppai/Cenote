@@ -57,6 +57,7 @@ public class ToEndCredits : MonoBehaviour
 
     void ChangeScene()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(Credits);
         Time.timeScale = 1;
     }

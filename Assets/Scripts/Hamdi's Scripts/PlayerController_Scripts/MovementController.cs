@@ -102,7 +102,10 @@ public class MovementController : MonoBehaviour
 
         //Khatim's Code
         if (hitLeverThree)
+        {
             levelThreeDoorAnim.SetBool("isMoving", true);
+            staticObj.doneFromThirdPuzzle = true;
+        }
 
         if (lever1Col != null && Input.GetKey(KeyCode.E))
         {

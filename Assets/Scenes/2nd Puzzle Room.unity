@@ -219,11 +219,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4884992877629046, guid: 1bf2fd2c001b81d498df99c9ffaa10a8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.08333731
+      value: 0.101
       objectReference: {fileID: 0}
     - target: {fileID: 4884992877629046, guid: 1bf2fd2c001b81d498df99c9ffaa10a8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.673892
+      value: -0.848
       objectReference: {fileID: 0}
     - target: {fileID: 4884992877629046, guid: 1bf2fd2c001b81d498df99c9ffaa10a8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -261,6 +261,16 @@ Prefab:
     - target: {fileID: 4884992877629046, guid: 1bf2fd2c001b81d498df99c9ffaa10a8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 230.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 54520731112710438, guid: 1bf2fd2c001b81d498df99c9ffaa10a8,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54520731112710438, guid: 1bf2fd2c001b81d498df99c9ffaa10a8,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114026955666827444, guid: 1bf2fd2c001b81d498df99c9ffaa10a8, type: 2}
@@ -1916,6 +1926,11 @@ Prefab:
       propertyPath: aClip.Array.data[29]
       value: 
       objectReference: {fileID: 8300000, guid: 592e7903575792e48aed4b7e5b699e71, type: 3}
+    - target: {fileID: 114424242384368674, guid: b03d2719db62ce049985d80fd1013879,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b03d2719db62ce049985d80fd1013879, type: 2}
   m_IsPrefabParent: 0
@@ -2278,7 +2293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &520669631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4708,7 +4723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1133439507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5413,6 +5428,10 @@ Prefab:
     - target: {fileID: 1419326981510264, guid: 027b9c4182409624e858c98ae6e8315a, type: 2}
       propertyPath: m_TagString
       value: Static
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419326981510264, guid: 027b9c4182409624e858c98ae6e8315a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 027b9c4182409624e858c98ae6e8315a, type: 2}
@@ -7282,7 +7301,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1776950908}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dccad6bd2c564af4890f36d4bd7c974d, type: 3}

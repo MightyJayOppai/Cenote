@@ -17,6 +17,14 @@ public class To2ndRoom : MonoBehaviour
         secondPuzzleRoom = 4;
 	}
 
+    private void Update()
+    {
+        if (staticObj.doneFromThirdPuzzle)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {

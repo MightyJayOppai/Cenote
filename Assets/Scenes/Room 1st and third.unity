@@ -14601,6 +14601,10 @@ Prefab:
       propertyPath: m_TagString
       value: Static
       objectReference: {fileID: 0}
+    - target: {fileID: 1419326981510264, guid: 027b9c4182409624e858c98ae6e8315a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 027b9c4182409624e858c98ae6e8315a, type: 2}
   m_IsPrefabParent: 0
@@ -16515,6 +16519,7 @@ MonoBehaviour:
   GateIsOpened: 0
   GatePanelScreen: 0
   GateHinge: {fileID: 1039156971}
+  staticObj: {fileID: 0}
 --- !u!4 &1878260973 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 19c81c61ce30bb54da17378ece21c3e2, type: 3}
