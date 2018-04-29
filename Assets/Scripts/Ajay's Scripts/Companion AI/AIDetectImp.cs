@@ -6,20 +6,47 @@ public class AIDetectImp : Node
 {
     public float speed;
     public LayerMask layer;
+    public CompanionBehaviorTree companion;
+    public float IntendedDis;
 
     public override void Execute(CompanionBehaviorTree MainBT)
     {
         GameObject comp = GameObject.FindGameObjectWithTag("Companion");
+        GameObject companionModel = GameObject.FindGameObjectWithTag("Companion");
+        companion = companionModel.GetComponent<CompanionBehaviorTree>();
 
-        //For every object with the specified layer that collides with the AI sphere range
-        Collider[] Hits = Physics.OverlapSphere(comp.transform.position, 1 , layer);
+        IntendedDis = 1;
+
+
+        
+        
         //if there is at least one object with the layer in the range
-        if (Hits.Length > 0)
+        if (companion.ObjImp != null)
         {
+            curCondition = Condition.RUNNING;
+            Debug.Log("RUNNING");
+            companion.StopFollow = true;
             float Step = speed * Time.deltaTime;
-            comp.transform.position = Vector3.MoveTowards(comp.transform.position, Hits[0].transform.position, Step);
+            comp.transform.position = Vector3.MoveTowards(comp.transform.position, companion.ObjImp.transform.position, Step);
+
         }
-               
-        Gizmos.DrawWireSphere(comp.transform.position, 1f);
+        if (companion.ObjImp != null)
+        {
+            if (Vector3.Distance(comp.transform.position, companion.ObjImp.transform.position) <= IntendedDis)
+            {
+                curCondition = Condition.SUCCESS;
+                companion.StopFollow = false;
+                Debug.Log("SUCCESS");
+            }
+        }
+
+        if(companion.ObjImp = null)
+        {
+            curCondition = Condition.FAIL;
+            companion.StopFollow = false;
+            Debug.Log("FAIL");
+
+        }
+
     }
 }

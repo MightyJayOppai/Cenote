@@ -8,31 +8,43 @@ public class CompanionBehaviorTree : MonoBehaviour {
     public float CompanionSpeed;
     public Transform Player;
 
+    public Collider CompSphere;
+    public GameObject ObjImp;
 
     public Animator anim;
+
+    public bool StopFollow;
 
 	void Start ()
     {
         anim = GetComponent<Animator>();
+        CompSphere = GetComponent<Collider>();
 
         Selector selectNode = new Selector();
-        Sequencer sequencerNode = new Sequencer();
+        Selector sequencerNode = new Selector();
 
         
-      //root = selectNode;
-        root = new AIFollow();
+        root = selectNode;   
         selectNode.Children.Add(sequencerNode);
         selectNode.Children.Add(new AIDetectImp());
 
         selectNode.Children.Add(new AIFollow());
-        //selectNode.Children.Add(new AIDetectImp());
+        
 
 
 	}
-	
-	
+
+
 	void Update ()
     {
         root.Execute(this);
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 8)
+        {
+            ObjImp = other.gameObject;
+        }
+    }
 }
